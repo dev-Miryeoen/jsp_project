@@ -1,0 +1,26 @@
+package repository;
+
+import java.util.List;
+
+import domain.Board;
+import domain.PagingVO;
+
+public interface BoardDAO {
+
+	int insert(Board b);
+
+	List<Board> getList();
+
+	Board getDetail(int bno);
+
+	int update(Board b);
+
+	int delete(int bno);
+
+	List<Board> getPageList(PagingVO pgvo);
+
+	int getTotal();
+
+	int getTotal(PagingVO pgvo);
+
+}
