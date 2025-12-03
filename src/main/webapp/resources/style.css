@@ -316,7 +316,7 @@ nav>div a{
     align-items: center;
 }
 @media (min-width: 768px) {
-    .detail-left {
-        border-right: 1px solid #ddd;
+    .detail-right {
+        border-left: 1px solid #ddd;
     }
 }
