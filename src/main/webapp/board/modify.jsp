@@ -31,6 +31,7 @@
 			<div class="detail-container">
 				<div class="detail-left">
 					<form action="/brd/update" method="post" enctype="multipart/form-data">
+						<input type="hidden" name="bno" value="${b.bno }">
 						<h1>
 							<span><span class="detail-span-no">No.${b.bno }</span><span class="detail-span-title"><input type="text" name="title" value="${b.title }" class="form-control"></span></span>
 							<span><span class="detail-span-writer">작성자 : ${b.writer }</span><span class="detail-span-regdate">작성일 : ${b.regdate }</span></span>
@@ -40,8 +41,8 @@
 						<input type="file" name="newFile" class="form-control">
 						<div class="detailBtnBox">
 							<a href="/brd/list"><button type="button" class="btn btn-dark">목록으로</button></a>
-							<a href="/brd/modify?bno=${b.bno }"><button type="button" class="btn btn-primary">수정</button></a>
-							<a href="/brd/delete?bno=${b.bno }"><button type="button" class="btn btn-danger">삭제</button></a>
+							<a href="/brd/modify?bno=${b.bno }"><button type="submit" class="btn btn-primary">수정</button></a>
+							<a href="/brd/delete?bno=${b.bno }"><button type="reset" class="btn btn-danger">삭제</button></a>
 						</div>
 					</form>
 				</div>
